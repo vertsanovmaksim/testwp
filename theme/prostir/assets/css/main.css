@@ -429,6 +429,8 @@ ul, ol { margin: 0; padding: 0; }
    Адаптив
    ========================================================= */
 @media (max-width: 1023px) {
+	/* Телефон: фото трохи «піднімаємо», щоб обличчя моделі не перекривав текст */
+	.hero__media { top: -30%; }
 	.types__grid, .packages__grid, .reviews__grid, .certificates__grid { grid-template-columns: repeat(2, 1fr); }
 	.portfolio__grid { grid-template-columns: repeat(3, 1fr); }
 	.steps__list { grid-template-columns: repeat(2, 1fr); }
