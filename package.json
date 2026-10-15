@@ -1,0 +1,9 @@
+{
+	"name": "prostir-obukhiv-demo",
+	"private": true,
+	"description": "Демо-сайт фотостудії «Простір Обухів» на WordPress Playground",
+	"scripts": {
+		"start": "npx @wp-playground/cli@latest server --blueprint=blueprint.local.json --mount=./theme/prostir:/wordpress/wp-content/themes/prostir --port=9400",
+		"start:public": "npx @wp-playground/cli@latest server --blueprint=blueprint.json --port=9400"
+	}
+}

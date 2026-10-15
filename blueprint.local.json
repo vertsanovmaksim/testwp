@@ -1,0 +1,13 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"landingPage": "/",
+	"preferredVersions": { "php": "8.3", "wp": "latest" },
+	"login": true,
+	"steps": [
+		{ "step": "activateTheme", "themeFolderName": "prostir" },
+		{
+			"step": "runPHP",
+			"code": "<?php require_once '/wordpress/wp-load.php'; prostir_install_demo( true );"
+		}
+	]
+}
